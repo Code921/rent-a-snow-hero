@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.morning.rentasnowhero.mapper.EquipRentalCalendarMapper">
+
+    <resultMap id="BaseResultMap" type="com.morning.rentasnowhero.model.entity.EquipRentalCalendar">
+            <id property="calendarId" column="calendar_id" />
+            <result property="equipId" column="equip_id" />
+            <result property="beginDate" column="begin_date" />
+            <result property="endDate" column="end_date" />
+            <result property="isDeleted" column="is_deleted" />
+            <result property="createdTime" column="created_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        calendar_id,equip_id,begin_date,end_date,is_deleted,created_time
+    </sql>
+</mapper>

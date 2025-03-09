@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.morning.rentasnowhero.mapper.CartMapper">
+
+    <resultMap id="BaseResultMap" type="com.morning.rentasnowhero.model.entity.Cart">
+            <id property="cartId" column="cart_id" />
+            <result property="userId" column="user_id" />
+            <result property="equipItems" column="equip_items" />
+            <result property="rentDates" column="rent_dates" />
+            <result property="quantity" column="quantity" />
+            <result property="dailyPrice" column="daily_price" />
+            <result property="isDeleted" column="is_deleted" />
+            <result property="createdTime" column="created_time" />
+            <result property="updatedTime" column="updated_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        cart_id,user_id,equip_items,rent_dates,quantity,daily_price,
+        is_deleted,created_time,updated_time
+    </sql>
+</mapper>

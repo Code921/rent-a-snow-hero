@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.morning.rentasnowhero.mapper.EquipmentMapper">
+
+    <resultMap id="BaseResultMap" type="com.morning.rentasnowhero.model.entity.Equipment">
+            <id property="equipId" column="equip_id" />
+            <result property="typeId" column="type_id" />
+            <result property="name" column="name" />
+            <result property="brand" column="brand" />
+            <result property="imageItems" column="image_items" />
+            <result property="dailyPrice" column="daily_price" />
+            <result property="depositAmount" column="deposit_amount" />
+            <result property="equipPrice" column="equip_price" />
+            <result property="status" column="status" />
+            <result property="description" column="description" />
+            <result property="isDeleted" column="is_deleted" />
+            <result property="createdTime" column="created_time" />
+            <result property="updatedTime" column="updated_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        equip_id,type_id,name,brand,image_items,daily_price,
+        deposit_amount,equip_price,status,description,is_deleted,
+        created_time,updated_time
+    </sql>
+</mapper>

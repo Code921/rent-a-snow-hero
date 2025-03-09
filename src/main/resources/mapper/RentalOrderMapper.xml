@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.morning.rentasnowhero.mapper.RentalOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.morning.rentasnowhero.model.entity.RentalOrder">
+            <id property="orderId" column="order_id" />
+            <result property="userId" column="user_id" />
+            <result property="snapshotNickname" column="snapshot_nickname" />
+            <result property="snapshotAddress" column="snapshot_address" />
+            <result property="useTime" column="use_time" />
+            <result property="startTime" column="start_time" />
+            <result property="endTime" column="end_time" />
+            <result property="returnTime" column="return_time" />
+            <result property="totalFee" column="total_fee" />
+            <result property="depositFee" column="deposit_fee" />
+            <result property="rentDates" column="rent_dates" />
+            <result property="orderStatus" column="order_status" />
+            <result property="deliveryMethod" column="delivery_method" />
+            <result property="deliveryOrderNo" column="delivery_order_no" />
+            <result property="equipItems" column="equip_items" />
+            <result property="paymentNo" column="payment_no" />
+            <result property="isDeleted" column="is_deleted" />
+            <result property="createdTime" column="created_time" />
+            <result property="updatedTime" column="updated_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        order_id,user_id,snapshot_nickname,snapshot_address,use_time,start_time,
+        end_time,return_time,total_fee,deposit_fee,rent_dates,
+        order_status,delivery_method,delivery_order_no,equip_items,payment_no,
+        is_deleted,created_time,updated_time
+    </sql>
+</mapper>
